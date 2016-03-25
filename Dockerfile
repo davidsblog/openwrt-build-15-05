@@ -6,7 +6,7 @@ RUN apt-get update &&\
     apt-get clean &&\
     useradd -m openwrt &&\
     usermod -a -G sudo openwrt &&\
-    sudo -iu openwrt git clone git://git.openwrt.org/15.05/openwrt.git &&\
+    sudo -iu openwrt git clone git://git.openwrt.org/15.05.1/openwrt.git &&\
     sudo -iu openwrt openwrt/scripts/feeds update
 
 RUN cd /home/openwrt/openwrt &&\
